@@ -2,7 +2,7 @@
 
 module testbench();
 
-    parameter WIDTH = 4, DEPTH = 8;
+    parameter WIDTH = 4, DEPTH = 4;
 
     // Testbench Signals
     reg clk;
