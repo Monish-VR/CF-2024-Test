@@ -28,13 +28,13 @@ module tt_um_preethikamurugan (
     
     lfsr8 r8(
         .clk(w_1Hz),
-        .reset(reset),
+        .reset(~rst_n),
         .lfsr(LED)
     );
     
     oneHz_gen uno(
         .clk_100MHz(clk),
-        .reset(rst_n),
+        .reset(~rst_n),
         .clk_1Hz(w_1Hz)
     );
      
