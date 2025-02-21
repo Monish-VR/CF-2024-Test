@@ -5,7 +5,7 @@
 SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = tt_um_reemashivva_fifo.v full.v empty.v fifo_mem.v sync_r2w.v sync_w2r.v clock_divider.v
+PROJECT_SOURCES = tt_um_preethikamurugan.v lfsr8.v oneHz_gen.v
 
 ifneq ($(GATES),yes)
 
@@ -35,7 +35,7 @@ COMPILE_ARGS 		+= -I$(SRC_DIR)
 
 # Include the testbench sources:
 VERILOG_SOURCES += $(PWD)/tb.v
-TOPLEVEL = testbench
+TOPLEVEL = tb
 
 
 
